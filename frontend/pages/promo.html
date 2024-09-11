@@ -1,0 +1,101 @@
+<html>
+    <meta name="viewport" content="width=device-widthm initial-scale=1.0">
+  <head style="font-size: 24px;">
+  </head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom:10px;
+    }
+    select, input {
+        margin-bottom: 15px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    a {
+  background:#a5a5a5;
+  color:#000000;
+  font-size:15px;
+  padding:8px 12px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  text-decoration:none;
+  
+  display: block; 
+}
+
+
+</style>
+<body>
+    <h1>Promo Generator</h1>
+    <form id="promoForm">
+        <label for="category">Choose Category:</label>
+        <select id="category" name="category">
+            <option value="Food">Food</option>
+            <option value="Shit">Shit</option>
+            <option value="Bullshit">Bullshit</option>
+            <option value="Horseshit">Horseshit</option>
+        </select>
+    
+        <label for="count">Amount of promos:</label>
+        <input type="number" id="count" name="count" min="1" max="10" value="1">
+    
+        <button type="submit">Generate!</button>
+        <br>
+        <a href="http://127.0.0.1/">Back to home page</a>
+
+    </form>
+    
+    <div id="result" style="margin-top: 20px;"></div>
+
+    <script>
+ document.getElementById('promoForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var category = document.getElementById('category').value;
+    var count = parseInt(document.getElementById('count').value);
+
+    fetch('/promo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({category: category, count: count}),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        var resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = '';
+        data.promos.forEach(promo => {
+            var promoDiv = document.createElement('div');
+            promoDiv.textContent = promo;
+            resultDiv.appendChild(promoDiv);
+        });
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        // Здесь вы можете добавить обработку ошибок, например, отображение сообщения пользователю
+    });
+});
+    </script>
+</body>
+</html>

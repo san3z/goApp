@@ -1,0 +1,44 @@
+PROMO: 2024/09/11 11:49:56 handling.go:61: ------------
+PROMO: 2024/09/11 11:49:56 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:49:56 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:49:56 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:49:56 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:49:56 handling.go:85: ------------
+PROMO: 2024/09/11 11:50:02 handling.go:61: ------------
+PROMO: 2024/09/11 11:50:02 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:50:02 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:50:02 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:50:02 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:50:02 handling.go:85: ------------
+PROMO: 2024/09/11 11:50:02 handling.go:61: ------------
+PROMO: 2024/09/11 11:50:02 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:50:02 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:50:02 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:50:02 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:50:02 handling.go:85: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:61: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:50:03 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:50:03 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:50:03 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:50:03 handling.go:85: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:61: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:50:03 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:50:03 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:50:03 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:50:03 handling.go:85: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:61: ------------
+PROMO: 2024/09/11 11:50:03 handling.go:63: promo function called with method POST
+PROMO: 2024/09/11 11:50:03 handling.go:68: Processing POST request 65
+PROMO: 2024/09/11 11:50:03 handling.go:76: Received category:  Food and count:  10 73
+PROMO: 2024/09/11 11:50:03 handling.go:79: Sending response:  {[PROMO_Food_1 PROMO_Food_2 PROMO_Food_3 PROMO_Food_4 PROMO_Food_5 PROMO_Food_6 PROMO_Food_7 PROMO_Food_8 PROMO_Food_9 PROMO_Food_10]}
+PROMO: 2024/09/11 11:50:03 handling.go:85: ------------
+PROMO: 2024/09/11 14:24:57 handling.go:61: ------------
+PROMO: 2024/09/11 14:24:57 handling.go:63: promo function called with method GET
+PROMO: 2024/09/11 14:24:57 handling.go:65: rendering HTML 62
+PROMO: 2024/09/11 14:24:57 handling.go:85: ------------
+PROMO: 2024/09/11 14:25:00 handling.go:61: ------------
+PROMO: 2024/09/11 14:25:00 handling.go:63: promo function called with method GET
+PROMO: 2024/09/11 14:25:00 handling.go:65: rendering HTML 62
+PROMO: 2024/09/11 14:25:00 handling.go:85: ------------
