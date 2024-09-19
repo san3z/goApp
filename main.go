@@ -1,9 +1,9 @@
 package main
 
 import (
-	b "myapp/backend"
+	s "myapp/backend"
 )
 
 func main() {
-	b.Handling()
+	s.Handling()
 }

@@ -1,5 +1,11 @@
+github.com/google/uuid v1.0.0 h1:b4Gk+7WdP/d3HZH8EJsZpvV7EtDOgaZLtnaNGIu1adA=
+github.com/google/uuid v1.0.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
 github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=
+github.com/pborman/uuid v1.2.1 h1:+ZZIw58t/ozdjRaXh/3awHfmWRbzYxJoAdNJxe/3pvw=
+github.com/pborman/uuid v1.2.1/go.mod h1:X/NO0urCmaxf9VXbdlT7C2Yzkj2IKimNn4k+gtPdI/k=
+github.com/sgade/randomorg v0.0.0-20190406144034-640a49fc64e0 h1:PYRF8OSotWUb3Z2zYPVY5JCvmzgAZTGDEgj+m01Y9Wc=
+github.com/sgade/randomorg v0.0.0-20190406144034-640a49fc64e0/go.mod h1:qyjORGxygDWQDYnRJrH0KukAw8C9nCodDe1+lvBhGDw=
 github.com/snapcore/snapd v0.0.0-20240907135734-6d1aacd0f9b1 h1:8SSPV1ROe3Bkie7ZlfbuUh+6bh0jA5SIDvXDRyaSScA=
 github.com/snapcore/snapd v0.0.0-20240907135734-6d1aacd0f9b1/go.mod h1:RfaJNlcyEP2RfVuyAX/3x+CJPECCAlZn+36Yily9FzY=
 golang.org/x/net v0.9.0 h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=

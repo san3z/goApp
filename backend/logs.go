@@ -23,7 +23,6 @@ func CritSize() error {
 }
 
 func initLogger() {
-	//	fmt.Println("initLogger kicks in")
 	file, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o666)
 	if err != nil {
 		log.Fatalf("Failed to open log file %s: %d", logFile, err)

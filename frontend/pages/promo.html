@@ -46,10 +46,10 @@
     <form id="promoForm">
         <label for="category">Choose Category:</label>
         <select id="category" name="category">
-            <option value="Food">Food</option>
-            <option value="Shit">Shit</option>
-            <option value="Bullshit">Bullshit</option>
-            <option value="Horseshit">Horseshit</option>
+            <option value="Wheels">Wheels</option>
+            <option value="Filters">Filters</option>
+            <option value="Engines">Engines</option>
+            <option value="Gearboxes">Gearboxes</option>
         </select>
     
         <label for="count">Amount of promos:</label>
@@ -64,38 +64,40 @@
     <div id="result" style="margin-top: 20px;"></div>
 
     <script>
- document.getElementById('promoForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var category = document.getElementById('category').value;
-    var count = parseInt(document.getElementById('count').value);
-
-    fetch('/promo', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({category: category, count: count}),
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        var resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = '';
-        data.promos.forEach(promo => {
-            var promoDiv = document.createElement('div');
-            promoDiv.textContent = promo;
-            resultDiv.appendChild(promoDiv);
+        document.getElementById('promoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var category = document.getElementById('category').value;
+            var count = parseInt(document.getElementById('count').value);
+        
+            fetch('/promo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({category: category, count: count}),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                var resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = '';
+                
+                data.promos.forEach(promo => {
+                    var promoCode = promo.replace(/\s/g, "");
+                    var promoDiv = document.createElement('div');
+                    promoDiv.className = 'promo-code';
+                    promoDiv.textContent = promoCode;
+                    resultDiv.appendChild(promoDiv);
+                });
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
         });
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        // Здесь вы можете добавить обработку ошибок, например, отображение сообщения пользователю
-    });
-});
-    </script>
+        </script>
 </body>
 </html>

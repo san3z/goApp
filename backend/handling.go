@@ -4,9 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 	"text/template"
 
 	"github.com/gorilla/mux"
+	"github.com/sgade/randomorg"
 )
 
 func Handling() {
@@ -51,8 +53,16 @@ type PromoResponse struct {
 func generatePromos(category string, count int) []string {
 	promos := make([]string, count)
 	for i := 0; i < count; i++ {
-		promos[i] = fmt.Sprintf("PROMO_%s_%d", category, i+1)
+		random := randomorg.NewRandom("???")
+		n := count
+		length := 10
+		characters := "QWERTYUIOPLKJHGFDSA"
+		value, _ := random.GenerateStrings(n, length, characters)
+		promoCode := strings.Join(value, "")
+		promos[i] = promoCode
 	}
+
+	fmt.Println(promos)
 	return promos
 }
 
@@ -62,8 +72,8 @@ func promo(w http.ResponseWriter, r *http.Request) {
 	defer logger.Println("------------")
 	logger.Printf("promo function called with method %v", r.Method)
 	if r.Method == http.MethodGet {
-		logger.Println("rendering HTML 62")
 		renderHTML(w, r, "promo.html")
+		logger.Println("rendering HTML 62")
 	} else if r.Method == http.MethodPost {
 		logger.Println("Processing POST request 65")
 		var promoReq PromoRequest
